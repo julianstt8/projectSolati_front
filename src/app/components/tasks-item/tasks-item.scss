@@ -1,0 +1,16 @@
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+
+  .buttons button {
+    margin-left: 5px;
+  }
+}

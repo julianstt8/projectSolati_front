@@ -1,0 +1,29 @@
+.tasks-container {
+  width: 400px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid #ccc;
+
+      .completed {
+        text-decoration: line-through;
+        color: gray;
+      }
+    }
+  }
+
+  button {
+    margin-left: 5px;
+  }
+}

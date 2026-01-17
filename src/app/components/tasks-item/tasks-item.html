@@ -1,0 +1,9 @@
+<li class="task-item">
+  <span [class.completed]="task.status">
+    {{ task.title }} - {{ task.description }} ({{ task.status ? 'Completada' : 'Pendiente' }})
+  </span>
+  <div class="buttons">
+    <button (click)="onEdit()">Editar</button>
+    <button (click)="onDelete()">Eliminar</button>
+  </div>
+</li>

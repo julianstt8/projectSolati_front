@@ -1,0 +1,10 @@
+<div class="tasks-container">
+  <h2>Lista de Tareas</h2>
+  <button (click)="addTask()">Agregar Tarea</button>
+  <ul>
+    <app-tasks-item *ngFor="let task of tasks" [task]="task" (edit)="editTask($event)" (delete)="deleteTask($event)">
+    </app-tasks-item>
+  </ul>
+  <app-tasks-form *ngIf="showForm" [task]="editingTask" (close)="onFormClose()">
+  </app-tasks-form>
+</div>
